@@ -3,6 +3,7 @@ import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import { Monitor, List, Collection, DocumentChecked, Lock, Connection, Upload, Refresh, Search, ArrowRight, SwitchButton, WarningFilled, CircleCheckFilled, VideoPause, Download, Setting, CircleCloseFilled } from '@element-plus/icons-vue'
 import { api, setCsrf } from './api'
+import { createRevision } from './revision'
 import AssetManager from './AssetManager.vue'
 import RedfishWorkbench from './RedfishWorkbench.vue'
 import { COMPONENTS, type NodeRow, type ImageMeta, type Group, type Draft, type Job, type EventRow, type Mode } from './types'
@@ -11,7 +12,7 @@ const loggedIn=ref(false), loginKey=ref(''), loginBusy=ref(false), page=ref('wor
 const assetManager=ref<InstanceType<typeof AssetManager>>()
 const config=ref<any>({credentials_available:false})
 const mode=ref<Mode>('live'), auth=ref('basic'), selfSigned=ref(false), workers=ref(2), canary=ref(false)
-const revision=ref(crypto.randomUUID()), source=ref(''), loadedSource=ref(''), sourceOpen=ref(false), settingsOpen=ref(false)
+const revision=ref(createRevision()), source=ref(''), loadedSource=ref(''), sourceOpen=ref(false), settingsOpen=ref(false)
 const rows=ref<NodeRow[]>([]), selected=ref<NodeRow[]>([]), nodeTable=ref<any>(), images=ref<ImageMeta[]>([])
 const groups=ref<Group[]>(COMPONENTS.map(component=>({component,enabled:false,imageId:'',expected:''})))
 const readiness=ref({ready:false,reason:'请先加载节点、读取状态并配置所需组件'})
@@ -42,7 +43,7 @@ function errorMessage(error:unknown){ElMessage.error(error instanceof Error?erro
 function formatTime(value?:number){return value?new Date(value*1000).toLocaleString('zh-CN',{hour12:false}):'—'}
 function bytes(value:number){return value>1048576?`${(value/1048576).toFixed(1)} MiB`:`${Math.ceil(value/1024)} KiB`}
 function stateType(state:string):'success'|'warning'|'info'|'danger'{return state==='completed'?'success':['failed','needs_review'].includes(state)?'danger':state==='running'?'warning':'info'}
-function invalidate(){revision.value=crypto.randomUUID();readiness.value={ready:false,reason:'配置或范围已变化，请重新执行升级预检查'};canary.value=false;queueReady()}
+function invalidate(){revision.value=createRevision();readiness.value={ready:false,reason:'配置或范围已变化，请重新执行升级预检查'};canary.value=false;queueReady()}
 function queueReady(){if(readyTimer)clearTimeout(readyTimer);readyTimer=setTimeout(refreshReady,250)}
 function buildDraft(withImages=true):Draft{
   if(dirty.value)throw new Error('清单输入已修改，请先点击“加载节点”')

@@ -2,6 +2,7 @@
 import { computed, onMounted, onBeforeUnmount, ref, watch } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import { api } from './api'
+import { createRevision } from './revision'
 import type { Job, Mode, NodeRow, Draft } from './types'
 const props=defineProps<{mode:Mode;busy:boolean;auth:string;selfSigned:boolean;workers:number;workbenchNodes:NodeRow[]}>()
 const emit=defineEmits<{(e:'job',value:Job):void;(e:'maintain',value:NodeRow[]):void;(e:'settings'):void}>()
@@ -44,7 +45,7 @@ async function registerWorkbench(){
 }
 async function collect(){
   if(props.busy||!selection.value.length)return
-  const draft:Draft={revision:crypto.randomUUID(),mode:props.mode,targets:selection.value.map(({name,address})=>({name,address})),images:[],auth:props.auth,self_signed:props.selfSigned,workers:props.workers,canary_confirmed:false}
+  const draft:Draft={revision:createRevision(),mode:props.mode,targets:selection.value.map(({name,address})=>({name,address})),images:[],auth:props.auth,self_signed:props.selfSigned,workers:props.workers,canary_confirmed:false}
   try{
     if(props.mode==='live')await ElMessageBox.confirm(`仅对所选 ${draft.targets.length} 台读取资产和 38 项固件：\n${draft.targets.map(t=>`${t.name} (${t.address})`).join('\n')}\n\n不会关机、上传、激活或回写 SN。`,'确认资产只读采集',{confirmButtonText:'确认本次只读采集',cancelButtonText:'取消',type:'info'})
     const job:Job=await api('/api/jobs','POST',{action:'asset-collect',draft});emit('job',job);ElMessage.success('只读资产采集已提交到后台，可在任务中心跟踪')
