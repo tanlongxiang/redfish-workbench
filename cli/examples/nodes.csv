@@ -1,0 +1,3 @@
+节点名,BMC_IP,SN,位置,标签
+example-01,192.0.2.11,,LAB-R01,example-only
+example-02,192.0.2.12,,LAB-R01,example-only

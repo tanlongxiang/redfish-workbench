@@ -1,0 +1,7 @@
+# 共享标准库核心
+
+Web和CLI共用此目录。RedfishSession、操作契约和工作流分别位于redfish_session.py、redfish_ops.py、redfish_workflow.py；目录数据是redfish_catalog_data.py。
+
+asset_*与memory_*负责台账、采集和报告；firmware_*保留原四组DCU CPLD适配。G50与DCU协议不可互换。node_verify/inventory_merge/xlsx_io保留字段规则和离线兼容能力；旧桌面GUI和面向某次现场清单的采集入口没有迁入本仓库。
+
+这里目前不是可pip安装的命名空间包；入口显式引导该目录，后续包化应作为独立重构。不要在core中导入FastAPI、Tk或前端依赖。blowfish_constants.json按原始字节验证SHA256，勿重新格式化或换行转换。

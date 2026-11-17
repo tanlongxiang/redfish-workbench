@@ -1,0 +1,756 @@
+{
+  "migration_date": "2026-11-16",
+  "source": "previous local BMC development workspace; original files retained",
+  "copied_files": [
+    {
+      "source": "BMC_Node_Verifier/redfish_catalog_data.py",
+      "target": "core/redfish_catalog_data.py",
+      "source_sha256": "d36b371e31bd8c4776f3f176cd1813f4f32a8eb90a947c946009f00b810c2351",
+      "copied_sha256": "d36b371e31bd8c4776f3f176cd1813f4f32a8eb90a947c946009f00b810c2351",
+      "path_rewritten": false,
+      "final_sha256": "d36b371e31bd8c4776f3f176cd1813f4f32a8eb90a947c946009f00b810c2351",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Node_Verifier/redfish_ops.py",
+      "target": "core/redfish_ops.py",
+      "source_sha256": "97df9bba69b8150d4e105a81abfba0e1f0d19ca1cab103e23346c1d41bea402e",
+      "copied_sha256": "97df9bba69b8150d4e105a81abfba0e1f0d19ca1cab103e23346c1d41bea402e",
+      "path_rewritten": false,
+      "final_sha256": "97df9bba69b8150d4e105a81abfba0e1f0d19ca1cab103e23346c1d41bea402e",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Node_Verifier/redfish_session.py",
+      "target": "core/redfish_session.py",
+      "source_sha256": "fa1a4b52cc1d4611c15b98d7bcbd79d29c2d394bf4e0fe26f59fddbb4866427d",
+      "copied_sha256": "fa1a4b52cc1d4611c15b98d7bcbd79d29c2d394bf4e0fe26f59fddbb4866427d",
+      "path_rewritten": false,
+      "final_sha256": "fa1a4b52cc1d4611c15b98d7bcbd79d29c2d394bf4e0fe26f59fddbb4866427d",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Node_Verifier/redfish_workflow.py",
+      "target": "core/redfish_workflow.py",
+      "source_sha256": "b96dadbe5c9b2a31147790e4135710cf15abf088162036c6234e1d5feb9df082",
+      "copied_sha256": "b96dadbe5c9b2a31147790e4135710cf15abf088162036c6234e1d5feb9df082",
+      "path_rewritten": false,
+      "final_sha256": "b96dadbe5c9b2a31147790e4135710cf15abf088162036c6234e1d5feb9df082",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Node_Verifier/bmc_client.py",
+      "target": "core/bmc_client.py",
+      "source_sha256": "a66f9180b3a08984bb7d1a6a1ca6f060b44a1d766c66f416de8a826c1458ed70",
+      "copied_sha256": "a66f9180b3a08984bb7d1a6a1ca6f060b44a1d766c66f416de8a826c1458ed70",
+      "path_rewritten": false,
+      "final_sha256": "a66f9180b3a08984bb7d1a6a1ca6f060b44a1d766c66f416de8a826c1458ed70",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Node_Verifier/firmware_auth.py",
+      "target": "core/firmware_auth.py",
+      "source_sha256": "be369aa8a7efd70d7a2989c661fd2f1ff24cb02020b7d43d7416e738a39a9ffa",
+      "copied_sha256": "be369aa8a7efd70d7a2989c661fd2f1ff24cb02020b7d43d7416e738a39a9ffa",
+      "path_rewritten": false,
+      "final_sha256": "be369aa8a7efd70d7a2989c661fd2f1ff24cb02020b7d43d7416e738a39a9ffa",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Node_Verifier/firmware_batch.py",
+      "target": "core/firmware_batch.py",
+      "source_sha256": "58575260c40f696d815ae05711df6eefa19b300787901564959bb76697c27488",
+      "copied_sha256": "58575260c40f696d815ae05711df6eefa19b300787901564959bb76697c27488",
+      "path_rewritten": false,
+      "final_sha256": "58575260c40f696d815ae05711df6eefa19b300787901564959bb76697c27488",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Node_Verifier/firmware_demo.py",
+      "target": "core/firmware_demo.py",
+      "source_sha256": "0492218b3875d0b060c053386ca6df50bf5250be127a5164042493221d957545",
+      "copied_sha256": "0492218b3875d0b060c053386ca6df50bf5250be127a5164042493221d957545",
+      "path_rewritten": false,
+      "final_sha256": "0492218b3875d0b060c053386ca6df50bf5250be127a5164042493221d957545",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Node_Verifier/firmware_readiness.py",
+      "target": "core/firmware_readiness.py",
+      "source_sha256": "8b28ea74bc96c753ed65601ea970696bad755266df29177061a28bfbe2b87a61",
+      "copied_sha256": "8b28ea74bc96c753ed65601ea970696bad755266df29177061a28bfbe2b87a61",
+      "path_rewritten": false,
+      "final_sha256": "8b28ea74bc96c753ed65601ea970696bad755266df29177061a28bfbe2b87a61",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Node_Verifier/memory_inventory.py",
+      "target": "core/memory_inventory.py",
+      "source_sha256": "80ed13b39a76ff5134675b9f31d6c151ca791799c4e9b576c366f743a6116b1d",
+      "copied_sha256": "80ed13b39a76ff5134675b9f31d6c151ca791799c4e9b576c366f743a6116b1d",
+      "path_rewritten": false,
+      "final_sha256": "80ed13b39a76ff5134675b9f31d6c151ca791799c4e9b576c366f743a6116b1d",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Node_Verifier/memory_report.py",
+      "target": "core/memory_report.py",
+      "source_sha256": "ad543d4b6c718db8e4d58c1a340ca6496c7601a0b7b807f733a8eac5add7c048",
+      "copied_sha256": "ad543d4b6c718db8e4d58c1a340ca6496c7601a0b7b807f733a8eac5add7c048",
+      "path_rewritten": false,
+      "final_sha256": "ad543d4b6c718db8e4d58c1a340ca6496c7601a0b7b807f733a8eac5add7c048",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Node_Verifier/asset_catalog.py",
+      "target": "core/asset_catalog.py",
+      "source_sha256": "6edb24bdfd82684d450ca85a25820e007dfd5d6d9beb2537d102d0e5e4975792",
+      "copied_sha256": "6edb24bdfd82684d450ca85a25820e007dfd5d6d9beb2537d102d0e5e4975792",
+      "path_rewritten": false,
+      "final_sha256": "6edb24bdfd82684d450ca85a25820e007dfd5d6d9beb2537d102d0e5e4975792",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Node_Verifier/asset_metadata.py",
+      "target": "core/asset_metadata.py",
+      "source_sha256": "02c0a74b928f62424f670b40ec178b1c1b8c97b9a685f1bbd30c673b26140d86",
+      "copied_sha256": "02c0a74b928f62424f670b40ec178b1c1b8c97b9a685f1bbd30c673b26140d86",
+      "path_rewritten": false,
+      "final_sha256": "02c0a74b928f62424f670b40ec178b1c1b8c97b9a685f1bbd30c673b26140d86",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Node_Verifier/asset_inventory.py",
+      "target": "core/asset_inventory.py",
+      "source_sha256": "32d61ce55b13b6662d18027ecbed6540b969589a7c110351c0b028a234e023c1",
+      "copied_sha256": "32d61ce55b13b6662d18027ecbed6540b969589a7c110351c0b028a234e023c1",
+      "path_rewritten": false,
+      "final_sha256": "32d61ce55b13b6662d18027ecbed6540b969589a7c110351c0b028a234e023c1",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Node_Verifier/inventory_merge.py",
+      "target": "core/inventory_merge.py",
+      "source_sha256": "5154d2019125457915fe41416f6bd99b96de1dec1d89cf66feda0f079a2e58b7",
+      "copied_sha256": "5154d2019125457915fe41416f6bd99b96de1dec1d89cf66feda0f079a2e58b7",
+      "path_rewritten": false,
+      "final_sha256": "5154d2019125457915fe41416f6bd99b96de1dec1d89cf66feda0f079a2e58b7",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Node_Verifier/node_verify.py",
+      "target": "core/node_verify.py",
+      "source_sha256": "849426a38482024b9f9fbfd630d7547b39ce7aa1a2213ffd1dff4cc50a7b2af5",
+      "copied_sha256": "849426a38482024b9f9fbfd630d7547b39ce7aa1a2213ffd1dff4cc50a7b2af5",
+      "path_rewritten": false,
+      "final_sha256": "849426a38482024b9f9fbfd630d7547b39ce7aa1a2213ffd1dff4cc50a7b2af5",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Node_Verifier/local_config.py",
+      "target": "core/local_config.py",
+      "source_sha256": "e991d3ad1467618f5730f9ad1cc8be938db43e28a1e34ccf86e46e59f78fc5a5",
+      "copied_sha256": "e991d3ad1467618f5730f9ad1cc8be938db43e28a1e34ccf86e46e59f78fc5a5",
+      "path_rewritten": false,
+      "final_sha256": "a3a9247283a7180495ef3b54b8e70b3bf3522561ddf273f3da37123e29bf2d54",
+      "post_copy_adjusted": true
+    },
+    {
+      "source": "BMC_Node_Verifier/xlsx_io.py",
+      "target": "core/xlsx_io.py",
+      "source_sha256": "a94bf5453a91e5e21031e964ecdd745e5d60cdce2a623e2a0d089df5cf62be16",
+      "copied_sha256": "a94bf5453a91e5e21031e964ecdd745e5d60cdce2a623e2a0d089df5cf62be16",
+      "path_rewritten": false,
+      "final_sha256": "a94bf5453a91e5e21031e964ecdd745e5d60cdce2a623e2a0d089df5cf62be16",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Node_Verifier/workspace_paths.py",
+      "target": "core/workspace_paths.py",
+      "source_sha256": "c13ad9bff034e0ccba6380a6ab1c0cedd9e7e539e46381a174f81323a9836dc4",
+      "copied_sha256": "c13ad9bff034e0ccba6380a6ab1c0cedd9e7e539e46381a174f81323a9836dc4",
+      "path_rewritten": false,
+      "final_sha256": "6ae5b630b658584a223b6ca5eed1642c1c2811035b0ed2d5878485cc9e8718bf",
+      "post_copy_adjusted": true
+    },
+    {
+      "source": "BMC_Node_Verifier/blowfish_constants.json",
+      "target": "core/blowfish_constants.json",
+      "source_sha256": "2ec3e89ec0c2d0060ec65de8e45cd97051e283036922261ddb6842bc645321b2",
+      "copied_sha256": "2ec3e89ec0c2d0060ec65de8e45cd97051e283036922261ddb6842bc645321b2",
+      "path_rewritten": false,
+      "final_sha256": "2ec3e89ec0c2d0060ec65de8e45cd97051e283036922261ddb6842bc645321b2",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Node_Verifier/test_firmware_batch.py",
+      "target": "core/test_firmware_batch.py",
+      "source_sha256": "a2fdc8e8b10ebd73324056e811196d7993c972a29f2c0bc438d754b9464a9726",
+      "copied_sha256": "a2fdc8e8b10ebd73324056e811196d7993c972a29f2c0bc438d754b9464a9726",
+      "path_rewritten": false,
+      "final_sha256": "a2fdc8e8b10ebd73324056e811196d7993c972a29f2c0bc438d754b9464a9726",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Node_Verifier/test_firmware_https.py",
+      "target": "core/test_firmware_https.py",
+      "source_sha256": "2a6ee55032459816262c53c07d0507af2e24f7a9d102c367c6887e201d762a73",
+      "copied_sha256": "2a6ee55032459816262c53c07d0507af2e24f7a9d102c367c6887e201d762a73",
+      "path_rewritten": false,
+      "final_sha256": "2a6ee55032459816262c53c07d0507af2e24f7a9d102c367c6887e201d762a73",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Node_Verifier/test_firmware_readiness.py",
+      "target": "core/test_firmware_readiness.py",
+      "source_sha256": "fababf84ae12cc2544574a9eef208b4c13b2057a5d1a7d18b3583c932aee2a63",
+      "copied_sha256": "fababf84ae12cc2544574a9eef208b4c13b2057a5d1a7d18b3583c932aee2a63",
+      "path_rewritten": false,
+      "final_sha256": "fababf84ae12cc2544574a9eef208b4c13b2057a5d1a7d18b3583c932aee2a63",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Node_Verifier/test_inventory_merge.py",
+      "target": "core/test_inventory_merge.py",
+      "source_sha256": "b15941fa53d49238f8c65537f7fdaf8ead4a427940ee9ef595a22b44996b52c8",
+      "copied_sha256": "b15941fa53d49238f8c65537f7fdaf8ead4a427940ee9ef595a22b44996b52c8",
+      "path_rewritten": false,
+      "final_sha256": "fb811903c14938ea23f69b56bdbdd62faa1f7439818fe726983aa62d081eb266",
+      "post_copy_adjusted": true
+    },
+    {
+      "source": "BMC_Node_Verifier/test_verify.py",
+      "target": "core/test_verify.py",
+      "source_sha256": "dd92b083059eac86a994f1072dee0630f4641c9e5de08fc97b7d6abb78665849",
+      "copied_sha256": "dd92b083059eac86a994f1072dee0630f4641c9e5de08fc97b7d6abb78665849",
+      "path_rewritten": false,
+      "final_sha256": "681ee696a6da589b19f95184ec9eba4c51b12631a34128ad0f58f16e340a775f",
+      "post_copy_adjusted": true
+    },
+    {
+      "source": "BMC_Web_Manager/start_web.py",
+      "target": "web/start_web.py",
+      "source_sha256": "69af55f801c9beb6b040fb605c8c058249256bd1ebd1305964ed4cd32f52d71b",
+      "copied_sha256": "69af55f801c9beb6b040fb605c8c058249256bd1ebd1305964ed4cd32f52d71b",
+      "path_rewritten": false,
+      "final_sha256": "24526637b21efd2f4938824bb6f3e9f84bf32679e48a99f03829e057f75a3ae3",
+      "post_copy_adjusted": true
+    },
+    {
+      "source": "BMC_Web_Manager/requirements.txt",
+      "target": "web/requirements.txt",
+      "source_sha256": "c534ae10bd1607a6f89ea403b649a800c512eb3dd9eadf8b109ba63aec78e2cb",
+      "copied_sha256": "c534ae10bd1607a6f89ea403b649a800c512eb3dd9eadf8b109ba63aec78e2cb",
+      "path_rewritten": false,
+      "final_sha256": "c534ae10bd1607a6f89ea403b649a800c512eb3dd9eadf8b109ba63aec78e2cb",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Web_Manager/requirements-test.txt",
+      "target": "web/requirements-test.txt",
+      "source_sha256": "791b6a25a3b18748b13154a2aa5abe455217d3d398353239c87b511dcf91ed11",
+      "copied_sha256": "791b6a25a3b18748b13154a2aa5abe455217d3d398353239c87b511dcf91ed11",
+      "path_rewritten": false,
+      "final_sha256": "791b6a25a3b18748b13154a2aa5abe455217d3d398353239c87b511dcf91ed11",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Web_Manager/启动Web工作台.sh",
+      "target": "web/启动Web工作台.sh",
+      "source_sha256": "96540dfba58f93d1d12be354e33d19ec54766169533825c6869bfde4b3df5ca8",
+      "copied_sha256": "96540dfba58f93d1d12be354e33d19ec54766169533825c6869bfde4b3df5ca8",
+      "path_rewritten": false,
+      "final_sha256": "b19f27c0893dfbe2e578690f5d28c61ccdf7a9dfac3fac71eeef9a75224e1333",
+      "post_copy_adjusted": true
+    },
+    {
+      "source": "BMC_Web_Manager/启动Web工作台.bat",
+      "target": "web/启动Web工作台.bat",
+      "source_sha256": "f57d1fd1e20b520ebcf7a305d95e5d469dd064349d63bc9f29a191991220df70",
+      "copied_sha256": "f57d1fd1e20b520ebcf7a305d95e5d469dd064349d63bc9f29a191991220df70",
+      "path_rewritten": false,
+      "final_sha256": "b2160ecb8f4943cdc498b44f8035c2e9c82b976d603b1a816847e125dcd86485",
+      "post_copy_adjusted": true
+    },
+    {
+      "source": "BMC_Web_Manager/bmc_web/__init__.py",
+      "target": "web/bmc_web/__init__.py",
+      "source_sha256": "c70fc351450b1d3e1e8617a43ffc45c6541eb68e78709d3b25003321a3210cb8",
+      "copied_sha256": "c70fc351450b1d3e1e8617a43ffc45c6541eb68e78709d3b25003321a3210cb8",
+      "path_rewritten": false,
+      "final_sha256": "c70fc351450b1d3e1e8617a43ffc45c6541eb68e78709d3b25003321a3210cb8",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Web_Manager/bmc_web/app.py",
+      "target": "web/bmc_web/app.py",
+      "source_sha256": "393c04e6490d3fc028e427f71d064317d93e096a4291b02b65ab5a039055d1bc",
+      "copied_sha256": "2e4486d7251d5abe3004425c12eb05efe49049b18735e0d9305637e0f7613483",
+      "path_rewritten": true,
+      "final_sha256": "328c0cb10ff84a980758d11ce107fe46fc3673db19a3b2e40b4d208376098ba8",
+      "post_copy_adjusted": true
+    },
+    {
+      "source": "BMC_Web_Manager/bmc_web/asset_catalog.py",
+      "target": "web/bmc_web/asset_catalog.py",
+      "source_sha256": "ccf0688edaf54450598a799738122635c89d28f37403fca3fa779887300597b9",
+      "copied_sha256": "ccf0688edaf54450598a799738122635c89d28f37403fca3fa779887300597b9",
+      "path_rewritten": false,
+      "final_sha256": "ccf0688edaf54450598a799738122635c89d28f37403fca3fa779887300597b9",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Web_Manager/bmc_web/bridge.py",
+      "target": "web/bmc_web/bridge.py",
+      "source_sha256": "10fe757da2d3630f7b92c266ac8198ac367d17527a2f01ed8a0eae1be6ad74f4",
+      "copied_sha256": "68bdde4364a1179e3e406f5557cc223a7a06f249a74db55d155b36b2ae5fa6c0",
+      "path_rewritten": true,
+      "final_sha256": "68bdde4364a1179e3e406f5557cc223a7a06f249a74db55d155b36b2ae5fa6c0",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Web_Manager/bmc_web/inventory.py",
+      "target": "web/bmc_web/inventory.py",
+      "source_sha256": "24bcd6b55bedff0077d6836635c2dadab70bb79f2dac8324335c611dfa6469fd",
+      "copied_sha256": "24bcd6b55bedff0077d6836635c2dadab70bb79f2dac8324335c611dfa6469fd",
+      "path_rewritten": false,
+      "final_sha256": "24bcd6b55bedff0077d6836635c2dadab70bb79f2dac8324335c611dfa6469fd",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Web_Manager/bmc_web/models.py",
+      "target": "web/bmc_web/models.py",
+      "source_sha256": "d1b04ca3f44c747ae391ee34e002894e63435e60fa6f16eb136460cc6678bed8",
+      "copied_sha256": "d1b04ca3f44c747ae391ee34e002894e63435e60fa6f16eb136460cc6678bed8",
+      "path_rewritten": false,
+      "final_sha256": "d1b04ca3f44c747ae391ee34e002894e63435e60fa6f16eb136460cc6678bed8",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Web_Manager/bmc_web/redfish_service.py",
+      "target": "web/bmc_web/redfish_service.py",
+      "source_sha256": "715644becac34011aa038978c77a6450ba73e8dd3ff79ed9a40ab97e21fc1db9",
+      "copied_sha256": "715644becac34011aa038978c77a6450ba73e8dd3ff79ed9a40ab97e21fc1db9",
+      "path_rewritten": false,
+      "final_sha256": "715644becac34011aa038978c77a6450ba73e8dd3ff79ed9a40ab97e21fc1db9",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Web_Manager/bmc_web/security.py",
+      "target": "web/bmc_web/security.py",
+      "source_sha256": "7443a843d954680e0f6dd92a4e4651850d1e763426561df5dedc960d07d3211c",
+      "copied_sha256": "7443a843d954680e0f6dd92a4e4651850d1e763426561df5dedc960d07d3211c",
+      "path_rewritten": false,
+      "final_sha256": "7443a843d954680e0f6dd92a4e4651850d1e763426561df5dedc960d07d3211c",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Web_Manager/bmc_web/service.py",
+      "target": "web/bmc_web/service.py",
+      "source_sha256": "606ed4e7c00e74561404563974547ea1b1f5dbf00e848c4d3a12e6dfcb66f67c",
+      "copied_sha256": "606ed4e7c00e74561404563974547ea1b1f5dbf00e848c4d3a12e6dfcb66f67c",
+      "path_rewritten": false,
+      "final_sha256": "606ed4e7c00e74561404563974547ea1b1f5dbf00e848c4d3a12e6dfcb66f67c",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Web_Manager/bmc_web/store.py",
+      "target": "web/bmc_web/store.py",
+      "source_sha256": "c301b92e7c4040a3f812c98e233c9c7e600093f411116bc57cafd2ea89fb469c",
+      "copied_sha256": "c301b92e7c4040a3f812c98e233c9c7e600093f411116bc57cafd2ea89fb469c",
+      "path_rewritten": false,
+      "final_sha256": "c301b92e7c4040a3f812c98e233c9c7e600093f411116bc57cafd2ea89fb469c",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Web_Manager/tests/browser_smoke.py",
+      "target": "web/tests/browser_smoke.py",
+      "source_sha256": "e811be6b2a6633c3303a14b31b9e37f074820acddab3f32a043b93c0d5f8af70",
+      "copied_sha256": "4c18796c6c43a4d18962bff3664fa82e8a9b9407c159d2a00e40cb240955ff86",
+      "path_rewritten": true,
+      "final_sha256": "6c1a5f8dc34a98286c2f0cf2fa40cdd6d9e7ba8f2dfe49ba2b09095436fccc2b",
+      "post_copy_adjusted": true
+    },
+    {
+      "source": "BMC_Web_Manager/tests/production_ui_smoke.py",
+      "target": "web/tests/production_ui_smoke.py",
+      "source_sha256": "df2ca61329168c4f59a3721599592966e5f2ec3a0acd8b4eee190cf17b6be158",
+      "copied_sha256": "b41244a6f867f2c27466692c1bc548bf061b614cc4e348ac16ea712abd339943",
+      "path_rewritten": true,
+      "final_sha256": "c00ec0b90c34708157d7c0042c961b1b02e64cf3d7385f1dc908da07ea0af07d",
+      "post_copy_adjusted": true
+    },
+    {
+      "source": "BMC_Web_Manager/tests/redfish_ui_smoke.py",
+      "target": "web/tests/redfish_ui_smoke.py",
+      "source_sha256": "60e141bd152fdd6ea104eec9039de1621a932fdbd1c38ec4e6333e8aea4ef5b9",
+      "copied_sha256": "b0cc7ad622b730a472dd1f38fb13cd3cd409726fe696d425c0768cffd7a03c49",
+      "path_rewritten": true,
+      "final_sha256": "b652d7e15b7bdde67fa0d76db7a33c8ae351957f7b1961b9ab1ebebbf7d842d8",
+      "post_copy_adjusted": true
+    },
+    {
+      "source": "BMC_Web_Manager/tests/serve_fixture.py",
+      "target": "web/tests/serve_fixture.py",
+      "source_sha256": "17a3f639aa17b423c90db67c933a32fa8a436e04780cdb91c57cd3b701cb5125",
+      "copied_sha256": "17a3f639aa17b423c90db67c933a32fa8a436e04780cdb91c57cd3b701cb5125",
+      "path_rewritten": false,
+      "final_sha256": "17a3f639aa17b423c90db67c933a32fa8a436e04780cdb91c57cd3b701cb5125",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Web_Manager/tests/serve_redfish_fixture.py",
+      "target": "web/tests/serve_redfish_fixture.py",
+      "source_sha256": "996dbcc90c23193af962ee5e758d3c8b4ed2bf7ac07dcb26c428c1e9ef7d3d7b",
+      "copied_sha256": "4ec370fe25c60c211e4b6eb479ff4c3603625dc1720326f870d75c5a5fd1baff",
+      "path_rewritten": true,
+      "final_sha256": "4ec370fe25c60c211e4b6eb479ff4c3603625dc1720326f870d75c5a5fd1baff",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Web_Manager/tests/test_api.py",
+      "target": "web/tests/test_api.py",
+      "source_sha256": "74bb877ae9ad43b3103ca3907a0be834b3036f1310b6994e7893aeb1ec3f7499",
+      "copied_sha256": "ff27d0f133a7f877a914da3391e121020481972d48bc3c12141270aa06d61d2c",
+      "path_rewritten": true,
+      "final_sha256": "ff27d0f133a7f877a914da3391e121020481972d48bc3c12141270aa06d61d2c",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Web_Manager/tests/test_asset_workflows.py",
+      "target": "web/tests/test_asset_workflows.py",
+      "source_sha256": "07da28ed937a600d260ec0b2f51f769a529819a9c58e68847b35ec82b0b40cd8",
+      "copied_sha256": "07da28ed937a600d260ec0b2f51f769a529819a9c58e68847b35ec82b0b40cd8",
+      "path_rewritten": false,
+      "final_sha256": "07da28ed937a600d260ec0b2f51f769a529819a9c58e68847b35ec82b0b40cd8",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Web_Manager/tests/test_redfish_api.py",
+      "target": "web/tests/test_redfish_api.py",
+      "source_sha256": "59e1dcaf6070d63eb2314e5ceee96033d763d7ceb663ef86b4bda27cba361a29",
+      "copied_sha256": "73ea3a96b1db4f32b8ed62a555e3c46651f9ad60863ef0a77c7fcc253e3d4b23",
+      "path_rewritten": true,
+      "final_sha256": "73ea3a96b1db4f32b8ed62a555e3c46651f9ad60863ef0a77c7fcc253e3d4b23",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Web_Manager/frontend/package.json",
+      "target": "web/frontend/package.json",
+      "source_sha256": "e7393e8f8718486ce98aa18dfd01b4aa37832cbaacddb97b9cd0935c6b59709c",
+      "copied_sha256": "e7393e8f8718486ce98aa18dfd01b4aa37832cbaacddb97b9cd0935c6b59709c",
+      "path_rewritten": false,
+      "final_sha256": "1dbf73f959fe705b387c7ff7ceffd956b423a0d3066b141f7f33e9dcb1526aca",
+      "post_copy_adjusted": true
+    },
+    {
+      "source": "BMC_Web_Manager/frontend/package-lock.json",
+      "target": "web/frontend/package-lock.json",
+      "source_sha256": "7f685d747474af9c707f3a1d14dc2b4bcb05ffb10ddfdc75b77e3357b1ca3874",
+      "copied_sha256": "7f685d747474af9c707f3a1d14dc2b4bcb05ffb10ddfdc75b77e3357b1ca3874",
+      "path_rewritten": false,
+      "final_sha256": "22b60ce0495e077766ffdc4451cce666360169dfb516537251f788ae1ea5bae7",
+      "post_copy_adjusted": true
+    },
+    {
+      "source": "BMC_Web_Manager/frontend/index.html",
+      "target": "web/frontend/index.html",
+      "source_sha256": "274a3a636e76d000d3551111c70577c4e019a838366e72e5d76eb7c098b584b9",
+      "copied_sha256": "274a3a636e76d000d3551111c70577c4e019a838366e72e5d76eb7c098b584b9",
+      "path_rewritten": false,
+      "final_sha256": "274a3a636e76d000d3551111c70577c4e019a838366e72e5d76eb7c098b584b9",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Web_Manager/frontend/tsconfig.json",
+      "target": "web/frontend/tsconfig.json",
+      "source_sha256": "c5bb9e197ad3a1f133ff40e7dbfe1aca38a370c2edf8a40e3bb93072c4c752bf",
+      "copied_sha256": "c5bb9e197ad3a1f133ff40e7dbfe1aca38a370c2edf8a40e3bb93072c4c752bf",
+      "path_rewritten": false,
+      "final_sha256": "c5bb9e197ad3a1f133ff40e7dbfe1aca38a370c2edf8a40e3bb93072c4c752bf",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Web_Manager/frontend/vite.config.ts",
+      "target": "web/frontend/vite.config.ts",
+      "source_sha256": "7b79793d69bd09af822da08890f7d8ead0d59279598fac83cb3411726127f1a3",
+      "copied_sha256": "7b79793d69bd09af822da08890f7d8ead0d59279598fac83cb3411726127f1a3",
+      "path_rewritten": false,
+      "final_sha256": "7b79793d69bd09af822da08890f7d8ead0d59279598fac83cb3411726127f1a3",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Web_Manager/frontend/THIRD_PARTY_NOTICES.txt",
+      "target": "web/frontend/THIRD_PARTY_NOTICES.txt",
+      "source_sha256": "667a93b8d92cc21b59c2663922277841701928c46255c8a2ede5041458aeb379",
+      "copied_sha256": "667a93b8d92cc21b59c2663922277841701928c46255c8a2ede5041458aeb379",
+      "path_rewritten": false,
+      "final_sha256": "588b2be2da2fbb052014ab6e4923c07b285b98a90d4ec1ab4ab343544c0ad0af",
+      "post_copy_adjusted": true
+    },
+    {
+      "source": "BMC_Web_Manager/frontend/src/App.vue",
+      "target": "web/frontend/src/App.vue",
+      "source_sha256": "d5f6d878080bbe2747cfd90980c2c44fc08f4c99e3a7c01cf9345e7af73bd04f",
+      "copied_sha256": "94a878a85172fcb21f06742278b5fc9fa469433b8bfb6a07ceefa577773d0f12",
+      "path_rewritten": true,
+      "final_sha256": "5fe2aa7e421a2a993b0dde45de082c0954a9fc0a0baab2fa47ccaedeeeddf81f",
+      "post_copy_adjusted": true
+    },
+    {
+      "source": "BMC_Web_Manager/frontend/src/AssetManager.vue",
+      "target": "web/frontend/src/AssetManager.vue",
+      "source_sha256": "2e6e90f6ae6be05577aa16e2b653147cc5d60a344c1b4532d6ea06c5e1ff3e5b",
+      "copied_sha256": "2e6e90f6ae6be05577aa16e2b653147cc5d60a344c1b4532d6ea06c5e1ff3e5b",
+      "path_rewritten": false,
+      "final_sha256": "2e6e90f6ae6be05577aa16e2b653147cc5d60a344c1b4532d6ea06c5e1ff3e5b",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Web_Manager/frontend/src/RedfishWorkbench.vue",
+      "target": "web/frontend/src/RedfishWorkbench.vue",
+      "source_sha256": "3fce8260ecc0b2d6688353dbe357213ba21cec69ef88eca6dc940b43486fff1a",
+      "copied_sha256": "3fce8260ecc0b2d6688353dbe357213ba21cec69ef88eca6dc940b43486fff1a",
+      "path_rewritten": false,
+      "final_sha256": "3fce8260ecc0b2d6688353dbe357213ba21cec69ef88eca6dc940b43486fff1a",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Web_Manager/frontend/src/api.ts",
+      "target": "web/frontend/src/api.ts",
+      "source_sha256": "5035525ccbad0e23ab6a4aca3abe7440f97e2c4d3526a2f5e2f901567c84dbbc",
+      "copied_sha256": "5035525ccbad0e23ab6a4aca3abe7440f97e2c4d3526a2f5e2f901567c84dbbc",
+      "path_rewritten": false,
+      "final_sha256": "5035525ccbad0e23ab6a4aca3abe7440f97e2c4d3526a2f5e2f901567c84dbbc",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Web_Manager/frontend/src/main.ts",
+      "target": "web/frontend/src/main.ts",
+      "source_sha256": "9d5989146a77bb6185bf763b2488c9655892d7267491811fde1f8b9a681bbd03",
+      "copied_sha256": "9d5989146a77bb6185bf763b2488c9655892d7267491811fde1f8b9a681bbd03",
+      "path_rewritten": false,
+      "final_sha256": "9d5989146a77bb6185bf763b2488c9655892d7267491811fde1f8b9a681bbd03",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Web_Manager/frontend/src/style.css",
+      "target": "web/frontend/src/style.css",
+      "source_sha256": "a71f9c25b667dbdcdade83663bdb37d8d070d978d8c05e6baea134eaeb88f80f",
+      "copied_sha256": "a71f9c25b667dbdcdade83663bdb37d8d070d978d8c05e6baea134eaeb88f80f",
+      "path_rewritten": false,
+      "final_sha256": "a71f9c25b667dbdcdade83663bdb37d8d070d978d8c05e6baea134eaeb88f80f",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Web_Manager/frontend/src/types.ts",
+      "target": "web/frontend/src/types.ts",
+      "source_sha256": "d34440830474e2aa446ba3fa9785ab367470159756d11d679f511e41de12cd98",
+      "copied_sha256": "d34440830474e2aa446ba3fa9785ab367470159756d11d679f511e41de12cd98",
+      "path_rewritten": false,
+      "final_sha256": "d34440830474e2aa446ba3fa9785ab367470159756d11d679f511e41de12cd98",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_Web_Manager/frontend/public/icon.svg",
+      "target": "web/frontend/public/icon.svg",
+      "source_sha256": "49fe47fbdc8bcc21ac6dad32dd38be3d16563ad5922f5cee0d302497e27e33b0",
+      "copied_sha256": "49fe47fbdc8bcc21ac6dad32dd38be3d16563ad5922f5cee0d302497e27e33b0",
+      "path_rewritten": false,
+      "final_sha256": "49fe47fbdc8bcc21ac6dad32dd38be3d16563ad5922f5cee0d302497e27e33b0",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_CLI/bmc_tool.py",
+      "target": "cli/bmc_tool.py",
+      "source_sha256": "032e740186f9485344eebc4578642b200302a1268bacf7f5513ee5429d5bb568",
+      "copied_sha256": "b1203e4c346b6903d1ea189a5504634b952b5e9bf5a57aae677019f95ccf0612",
+      "path_rewritten": true,
+      "final_sha256": "b1203e4c346b6903d1ea189a5504634b952b5e9bf5a57aae677019f95ccf0612",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_CLI/README.md",
+      "target": "cli/README.md",
+      "source_sha256": "8501a8ce72e1537e5685c1a22bbc766e4c84e99198d95c3e3c9162bbe6ae7fa6",
+      "copied_sha256": "631f9902c152f7d55fc30eb04ea957a5249988809945247fdb73a7831a0eb539",
+      "path_rewritten": true,
+      "final_sha256": "25262d5e2f84dc8132d94433eedfc604b53b21502ab7fa8ec40cb9161aa4fb8d",
+      "post_copy_adjusted": true
+    },
+    {
+      "source": "BMC_CLI/工具登记说明.txt",
+      "target": "cli/工具登记说明.txt",
+      "source_sha256": "1c04fad8b15d15256324b2d2ece63618d9f06a8eea0f6e85e7302b5054f2f16d",
+      "copied_sha256": "1c04fad8b15d15256324b2d2ece63618d9f06a8eea0f6e85e7302b5054f2f16d",
+      "path_rewritten": false,
+      "final_sha256": "1c04fad8b15d15256324b2d2ece63618d9f06a8eea0f6e85e7302b5054f2f16d",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_CLI/.env.example",
+      "target": "cli/.env.example",
+      "source_sha256": "8d59d37f84af41e01c2814d2b2010ba1390dafc0fb5a12333cabb8d3ebd12e09",
+      "copied_sha256": "8d59d37f84af41e01c2814d2b2010ba1390dafc0fb5a12333cabb8d3ebd12e09",
+      "path_rewritten": false,
+      "final_sha256": "8d59d37f84af41e01c2814d2b2010ba1390dafc0fb5a12333cabb8d3ebd12e09",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_CLI/bmc_cli/__init__.py",
+      "target": "cli/bmc_cli/__init__.py",
+      "source_sha256": "874ee33012f37fbb3ce6626721b0c82150522998a6fdc5a7a944d4c9b3aff466",
+      "copied_sha256": "874ee33012f37fbb3ce6626721b0c82150522998a6fdc5a7a944d4c9b3aff466",
+      "path_rewritten": false,
+      "final_sha256": "874ee33012f37fbb3ce6626721b0c82150522998a6fdc5a7a944d4c9b3aff466",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_CLI/bmc_cli/app.py",
+      "target": "cli/bmc_cli/app.py",
+      "source_sha256": "48da3a6846e77e0bf3ddec6717eb837696607bd4459698d7768d27c3e65e108e",
+      "copied_sha256": "3477a682534520724af3ae9034cb854a7a69d1d1da3f2bb208ed1da8d5df7204",
+      "path_rewritten": true,
+      "final_sha256": "e46f6b15f2caba5034f3a73c4b54ab34398a0650dca40f0c74e5958f37c04f5c",
+      "post_copy_adjusted": true
+    },
+    {
+      "source": "BMC_CLI/bmc_cli/redfish.py",
+      "target": "cli/bmc_cli/redfish.py",
+      "source_sha256": "b784598c1aefeef1953c253acaaab5e53f41359c6b2229724cb286eedca7be69",
+      "copied_sha256": "b784598c1aefeef1953c253acaaab5e53f41359c6b2229724cb286eedca7be69",
+      "path_rewritten": false,
+      "final_sha256": "b784598c1aefeef1953c253acaaab5e53f41359c6b2229724cb286eedca7be69",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_CLI/bmc_cli/reports.py",
+      "target": "cli/bmc_cli/reports.py",
+      "source_sha256": "cae43f2fa08e11269191b8fe758294e3653574a902e3d65123d80b93ac395fa0",
+      "copied_sha256": "cae43f2fa08e11269191b8fe758294e3653574a902e3d65123d80b93ac395fa0",
+      "path_rewritten": false,
+      "final_sha256": "cae43f2fa08e11269191b8fe758294e3653574a902e3d65123d80b93ac395fa0",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_CLI/bmc_cli/store.py",
+      "target": "cli/bmc_cli/store.py",
+      "source_sha256": "938fb1d6ff64850f9ba727e4470dcf6d2248f96e9670493fae5b03741d3988b2",
+      "copied_sha256": "938fb1d6ff64850f9ba727e4470dcf6d2248f96e9670493fae5b03741d3988b2",
+      "path_rewritten": false,
+      "final_sha256": "938fb1d6ff64850f9ba727e4470dcf6d2248f96e9670493fae5b03741d3988b2",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_CLI/bmc_cli/targets.py",
+      "target": "cli/bmc_cli/targets.py",
+      "source_sha256": "18b08dcb6c7ab5870120a8eb3e551b8222901ec50457afe2bac0b23f8b5640dd",
+      "copied_sha256": "18b08dcb6c7ab5870120a8eb3e551b8222901ec50457afe2bac0b23f8b5640dd",
+      "path_rewritten": false,
+      "final_sha256": "18b08dcb6c7ab5870120a8eb3e551b8222901ec50457afe2bac0b23f8b5640dd",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_CLI/tests/redfish_fixture.py",
+      "target": "cli/tests/redfish_fixture.py",
+      "source_sha256": "49a99c86ebd479e2646143d0102f79b295536406892f2a37e4120a93164ecd12",
+      "copied_sha256": "49a99c86ebd479e2646143d0102f79b295536406892f2a37e4120a93164ecd12",
+      "path_rewritten": false,
+      "final_sha256": "49a99c86ebd479e2646143d0102f79b295536406892f2a37e4120a93164ecd12",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_CLI/tests/test_cli.py",
+      "target": "cli/tests/test_cli.py",
+      "source_sha256": "80b286659e05a0189742b27546102b006fe132e42b090cf7b66763942abb5045",
+      "copied_sha256": "039e785a2e370d66fb1affd7e1a23457528c907a8f063f61b4d6e6e6db3448e6",
+      "path_rewritten": true,
+      "final_sha256": "039e785a2e370d66fb1affd7e1a23457528c907a8f063f61b4d6e6e6db3448e6",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_CLI/tests/test_cli_https.py",
+      "target": "cli/tests/test_cli_https.py",
+      "source_sha256": "a835b9ba59f17da649aed606c99be692df895f85dfec03fb27805a310e2e8747",
+      "copied_sha256": "5e1b1ae1873be208f38823222e7fd76b180190ba3c69deabb8e92dab3f3cba8f",
+      "path_rewritten": true,
+      "final_sha256": "5e1b1ae1873be208f38823222e7fd76b180190ba3c69deabb8e92dab3f3cba8f",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_CLI/tests/test_memory.py",
+      "target": "cli/tests/test_memory.py",
+      "source_sha256": "fab7d97a7c5920d96edd1ccd9545feb9bcd19952b70247535ffb678d1edb2fab",
+      "copied_sha256": "e47ce35bdbe5ecb9f59683a3439871732b81608ceada7d01f32cc34a21573393",
+      "path_rewritten": true,
+      "final_sha256": "e47ce35bdbe5ecb9f59683a3439871732b81608ceada7d01f32cc34a21573393",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_CLI/tests/test_redfish.py",
+      "target": "cli/tests/test_redfish.py",
+      "source_sha256": "1ab4a74b790ea6de0113e2868cab6a1b0499e963ec0f653006700a54c2c842e9",
+      "copied_sha256": "e3487f2ada933fab450b98e8df04e0f2f9390c049d74531fe0edcb2f48a92f19",
+      "path_rewritten": true,
+      "final_sha256": "e3487f2ada933fab450b98e8df04e0f2f9390c049d74531fe0edcb2f48a92f19",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_CLI/tools/build_redfish_catalog.py",
+      "target": "cli/tools/build_redfish_catalog.py",
+      "source_sha256": "b6680f61993a4014d7e6e5354007e3b34dc5f526c9949e519f6dc5521af251a7",
+      "copied_sha256": "b6680f61993a4014d7e6e5354007e3b34dc5f526c9949e519f6dc5521af251a7",
+      "path_rewritten": false,
+      "final_sha256": "b6680f61993a4014d7e6e5354007e3b34dc5f526c9949e519f6dc5521af251a7",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_CLI/tools/build_release.py",
+      "target": "cli/tools/build_release.py",
+      "source_sha256": "dae76b920992bb7fec1173a9e8c98710c35f24846ede20eaaaa1a66a0ffad6fd",
+      "copied_sha256": "9914a90bcdb86c5e191936aa50a5661907c67762d2b4a3e7753df04980d5a852",
+      "path_rewritten": true,
+      "final_sha256": "9914a90bcdb86c5e191936aa50a5661907c67762d2b4a3e7753df04980d5a852",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_CLI/examples/nodes.csv",
+      "target": "cli/examples/nodes.csv",
+      "source_sha256": "9a8d78864607698887d42759f68c3af35053f5905c65599668751fe024fe18dd",
+      "copied_sha256": "9a8d78864607698887d42759f68c3af35053f5905c65599668751fe024fe18dd",
+      "path_rewritten": false,
+      "final_sha256": "9a8d78864607698887d42759f68c3af35053f5905c65599668751fe024fe18dd",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_CLI/examples/nodes.txt",
+      "target": "cli/examples/nodes.txt",
+      "source_sha256": "83891e2910b7d7d291fa61e06193043c266568631e02f886f24bee88f697a405",
+      "copied_sha256": "83891e2910b7d7d291fa61e06193043c266568631e02f886f24bee88f697a405",
+      "path_rewritten": false,
+      "final_sha256": "83891e2910b7d7d291fa61e06193043c266568631e02f886f24bee88f697a405",
+      "post_copy_adjusted": false
+    },
+    {
+      "source": "BMC_CLI/.env.example",
+      "target": ".env.example",
+      "source_sha256": "8d59d37f84af41e01c2814d2b2010ba1390dafc0fb5a12333cabb8d3ebd12e09",
+      "copied_sha256": "8d59d37f84af41e01c2814d2b2010ba1390dafc0fb5a12333cabb8d3ebd12e09",
+      "path_rewritten": false,
+      "final_sha256": "8d59d37f84af41e01c2814d2b2010ba1390dafc0fb5a12333cabb8d3ebd12e09",
+      "post_copy_adjusted": false
+    }
+  ],
+  "excluded": [
+    "credentials",
+    "field data",
+    "spreadsheets",
+    "logs",
+    "firmware",
+    "vendor PDF",
+    "compiled releases",
+    "virtualenv",
+    "node_modules",
+    "desktop GUI and site collection entrypoints"
+  ]
+}

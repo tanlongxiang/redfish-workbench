@@ -1,0 +1,16 @@
+工具名称：BMC 命令行运维工具 v1.2.0
+
+功能：批量只读采集服务器 SN、机型、电源、CPU/内存及固件版本；资产台账导入、筛选统计、Excel/CSV/JSON 导出；独立电源控制；按组 DCU CPLD 维护。
+
+用法（Python 3.11+，仅标准库，无需安装依赖）：
+1. 查看帮助：python -I bmc_tool.pyz --help
+2. 离线演示：python -I bmc_tool.pyz demo
+3. 批量采集：python -I bmc_tool.pyz collect --live --targets nodes.csv --username admin --firmware
+4. 离线统计：python -I bmc_tool.pyz stats --input inventory.xlsx
+
+节点清单使用 TXT/CSV/XLSX，密码交互隐藏输入；更多参数见 README.md。
+电源和固件写入默认只展示计划，真实执行需本次明确许可及终端逐次确认；不自动关机/上电、不自动重试或续刷。CPLD 写适配仅限 Lattice 四组 DCU，资产只读字段按设备支持情况返回。
+
+新增内存条统计：collect 命令追加 --memory，按节点统计32GB/64GB/混插并输出逐插槽明细；支持 BMCIP 列。
+
+v1.2.0新增：redfish catalog 查看Systems/Chassis/UpdateService共69项操作；redfish run --operation 3.3.1 --targets nodes.csv --live --username admin 通过任务级Session只读查询。变更默认只打印计划；执行仍需本次许可及交互确认。BIOS密码变更使用专用隐藏输入，不经通用JSON；适配和硬件验证范围见README。
